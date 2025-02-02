@@ -124,7 +124,7 @@ public class VRManageScripts : MonoBehaviour
                 component3.GetComponent<VRPlaceObjects>().ResetHover();
                 objectSelector.enabled = true;
                  placeObjectPanel.SetActive(false);
-                 objectSelector.ShowInfoPanel();
+                 //objectSelector.ShowInfoPanel();
                 break;
             case 2:
                 component3.enabled = true;

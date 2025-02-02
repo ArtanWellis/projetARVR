@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - triggerVetement
+  - Table
+  - Wall
+  - Laptop
+  - Chair
+  - Target
+  - SpotLight
+  - Box
+  - Plot
+  - Dressing
+  - Dresing room
+  - Mirror
   layers:
   - Default
   - TransparentFX
