@@ -8,8 +8,8 @@ public class CSVDataReader : MonoBehaviour
     TextAsset suspectsFile;
     TextAsset objectsFile;
 
-    List<Suspect> listOfSuspects = new List<Suspect>();
-    List<ObjectOfInterest> listOfObjects = new List<ObjectOfInterest>();
+    public List<Suspect> listOfSuspects = new List<Suspect>();
+    public List<ObjectOfInterest> listOfObjects = new List<ObjectOfInterest>();
     public Canvas myCanvas;
 
     // Start is called before the first frame update
@@ -50,17 +50,17 @@ public class CSVDataReader : MonoBehaviour
     {
         List<string> results = new List<string>();
 
-        // Filtrer les étudiants en fonction de l'heure
+        // Filtrer les ï¿½tudiants en fonction de l'heure
         foreach (var suspect in listOfSuspects)
         {
             Debug.Log("Checking " + suspect.getName());
             for (int time = startTime; time <= endTime; time++)
             {
-                string location = suspect.queryTime(time);  // Récupère la localisation pour chaque heure
+                string location = suspect.queryTime(time);  // Rï¿½cupï¿½re la localisation pour chaque heure
                 if (location != "time not existant" && !results.Contains(suspect.getName()))
                 {
-                    results.Add(suspect.getName());  // Ajoute le nom de l'étudiant si une présence est trouvée
-                    break;  // Une fois trouvé, on arrête de vérifier pour ce suspect
+                    results.Add(suspect.getName());  // Ajoute le nom de l'ï¿½tudiant si une prï¿½sence est trouvï¿½e
+                    break;  // Une fois trouvï¿½, on arrï¿½te de vï¿½rifier pour ce suspect
                 }
             }
         }
@@ -68,7 +68,7 @@ public class CSVDataReader : MonoBehaviour
         // Filtrer les objets en fonction de l'heure
         foreach (var obj in listOfObjects)
         {
-            // Vérifiez si l'objet est dans la plage horaire et ajout du nom
+            // Vï¿½rifiez si l'objet est dans la plage horaire et ajout du nom
             if (int.TryParse(obj.oSellTime, out int sellTime) && sellTime >= startTime && sellTime <= endTime)
             {
                 results.Add(obj.oName);
@@ -83,7 +83,7 @@ public class CSVDataReader : MonoBehaviour
     {
         List<string> results = GetPeopleAndObjectsInRange(startTime, endTime);
 
-        // Trouve le texte pour afficher les résultats
+        // Trouve le texte pour afficher les rï¿½sultats
         Text resultText = myCanvas.GetComponentInChildren<Text>();
         resultText.text = string.Join("\n", results);
         Debug.Log("Results displayed: \n" + string.Join("\n", results));

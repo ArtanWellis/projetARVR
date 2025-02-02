@@ -43,6 +43,12 @@ public class TimeSelector : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject); // Keep this GameObject across scenes if necessary
     }
+    public List<Suspect> getListOfSuspects(){
+        return listOfSuspects;
+    }
+      public List<ObjectOfInterest> getListOfObjects(){
+        return listOfObjects;
+    }
 
     private void Start()
     {
@@ -81,6 +87,8 @@ public class TimeSelector : MonoBehaviour
             }
         }
     }
+
+  
 
     private void LoadObjects()
     {
