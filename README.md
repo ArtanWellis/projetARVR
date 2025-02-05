@@ -17,15 +17,15 @@ Lien du premier Github : https://github.com/Ziad-Bouhlel/Multimodal-Yee-Haw
 
   
 
-## AR : Elias et Wassim
+## AR : Elias, Wassim et Romain
 
 Pour la partie AR, nous avons réalisé les features suivantes :
 
-- Permettre de sélectionner 2 SALLES, ET AVOIR UNE VISUALISATION DU TEMPS DE TRAJETS ENTRE 2 SALLES.
+- Permettre de sélectionner 2 SALLES, ET AVOIR UNE VISUALISATION DU TEMPS DE TRAJETS ENTRE 2 SALLES. Wassim, 2 étoiles
 
-- Conception d'un menu en qui affiche la localisation des étudiants d'intérêt en les filtrant par année d'étude ou par spécialisation (IHM, MAM, AL, WD, etc.) ainsi que par le mode de transport préféré.
+- Conception d'un menu en qui affiche la localisation des étudiants d'intérêt en les filtrant par année d'étude ou par spécialisation (IHM, MAM, AL, WD, etc.) ainsi que par le mode de transport préféré. Elias, 2 étoiles
 
- - Ajout d'un bloc note pour écrire et saisir rapidement des informations sur un élève, une salle ou un objet.
+ - Ajout d'un bloc note pour écrire et saisir rapidement des informations sur un élève, une salle ou un objet. Romain, 1 étoile
 
 Pour lancer l'application il suffit de build le projet sur un téléphone android, et le projet se lancera automatiquement sur le téléphone.
 
@@ -48,13 +48,13 @@ Au cours de ce projet, nous nous sommes concentrés sur la partie technique et l
 
 Dans le cadre de la partie VR, nous avons implémenté les extensions suivantes :
 
-  
+  - Affichage des informations d'un objet de la scène. Amir et Romain, 1 étoile
 
-- Manipulation des objets avec un dispositif multimodal : L'utilisateur peut interagir avec des objets dans l'environnement virtuel en utilisant les touches de sa manette. Il peut déplacer, agrandir/rétrécir, tourner et ajouter des objets dans son environnement.
+- Manipulation des objets avec un dispositif multimodal : L'utilisateur peut interagir avec des objets dans l'environnement virtuel en utilisant les touches de sa manette. Il peut déplacer, agrandir/rétrécir, tourner et ajouter des objets dans son environnement. Romain, 2 étoiles
 
-- Changement d'apparence via un inventaire de personnages et tenues : L'utilisateur peut changer son apparence en sélectionnant différents personnage dans son inventaire, rendant l'expérience plus personnalisée.
+- Changement d'apparence via un inventaire de personnages et tenues : L'utilisateur peut changer son apparence en sélectionnant différents personnage dans son inventaire, rendant l'expérience plus personnalisée. Ziad, 2 étoiles
 
-- Support VR Headset : L'intégration complète avec un casque VR permet de plonger l'utilisateur dans l'environnement virtuel de manière plus immersive.
+- Support VR Headset : L'intégration complète avec un casque VR permet de plonger l'utilisateur dans l'environnement virtuel de manière plus immersive. Amir, 2 étoiles
  
   
 
