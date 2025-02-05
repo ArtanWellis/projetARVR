@@ -8,7 +8,7 @@ public class ObjectSelector : MonoBehaviour
 {
     private Camera mainCamera;
     
-
+[SerializeField] private Transform cameraTransform;  // Référence à la caméra VR
     public GameObject currentInfoPanel;
     public TextMeshProUGUI objectNameText;
     public TextMeshProUGUI objectDescriptionText;
@@ -47,9 +47,10 @@ public class ObjectSelector : MonoBehaviour
         objectDescriptionText.text = "Description: " + description;
 
         Vector3 panelPosition = target.transform.position + target.transform.up * 0.5f + target.transform.right * 0.5f;
-        currentInfoPanel.transform.position = panelPosition;
-        currentInfoPanel.transform.LookAt(mainCamera.transform);
-        currentInfoPanel.transform.Rotate(0, 180, 0);
+        Vector3 newPosition = cameraTransform.position + (cameraTransform.forward * 1);
+        currentInfoPanel.transform.position = newPosition;
+        
+        currentInfoPanel.transform.rotation = cameraTransform.rotation;
 
         if (!isUIVisible)
         {
