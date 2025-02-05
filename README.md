@@ -66,6 +66,11 @@ Voici les package à installer :
 
 ![packages](./imagePackages.png)
 
+/!\ Important pour lancer la VR, il faut désactiver ARcore du XR plugin management dans Andoid : Edit > Project Settings > XR Plug-in Management > Android > décocher Google ARCore
+Et pour avoir une meilleure image mettre le color space en Gamma et mettre Vulkan dans Graphics API : Edit > Project Settings > Player > other settings > mettre Gamma dans Color Space et mettre Vulkan dans Graphics APIs /!\
+
+![settings pour la VR](./settingsVR.png)
+
 vidéo suivies pour build la VR (de 10 à 17 minutes) : 
 
   https://www.youtube.com/watch?v=rd-vObXRDNQ&t=643s&ab_channel=OlivierBecker
